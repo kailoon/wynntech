@@ -1,0 +1,22 @@
+{% block base %}
+	{% include "shared/base.html" %}
+{% endblock %}	
+<body class="{{ body_classes }}">
+	{% block leading %}
+  	{% include "shared/leading.html" %}
+ 	{% endblock %}
+	{% block products %}
+  	{% include "shared/products.html" %}
+  {% endblock %}
+  {% block recognitions %}
+  	{% include "shared/recognitions.html" %}
+  {% endblock %}
+  {% block team %}
+  	{% include "shared/team.html" %}
+  {% endblock %}
+
+{% block footer %}
+	{% include "shared/footer.html" %}
+{% endblock %}
+</body>
+</html>

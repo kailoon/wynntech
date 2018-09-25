@@ -1,0 +1,23 @@
+<!-- htmlmin:ignore -->
+{% from '../macros/helpers.html' import sprite %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Description" CONTENT="This tag provides a short description of the page. In some situations this description is used as a part of the snippet shown in the search results.">
+
+    <title>Wynntech Star Sdn Bhd - {{ page_title }}</title>
+    <meta name="robots" content="noindex,nofollow">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- To prevent Mobile Safari from automatically detecting phone numbers -->
+    <meta name="format-detection" content="telephone=no">
+
+    {% include "shared/app-icons.html" %}
+    {% block head %}{% endblock %}
+  </head>
+  <body>

@@ -1,0 +1,26 @@
+{% set page_title = "About" %}
+{% set page_head = "All about" %}
+{% set page_bold = "Wynntech Star" %}
+{% set page_desc = "We supply only the best." %}
+{% set page_img = "https://source.unsplash.com/random/?food" %}
+{% include "shared/base.html" %}
+<main role="main">
+  {% include "shared/leading.html" %}
+  {% block main %}
+  <section id="about">
+
+		<div class="about">
+			<h3>About Us.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nesciunt officiis recusandae dolore eligendi voluptatibus quibusdam ipsum minus sed odit assumenda aliquam itaque earum harum voluptas rerum, nisi dolorum porro! Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor.</p>
+			<p>Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor.</p>
+		</div>
+		<div class="farm">
+			
+		</div>  	  
+  </section>
+	{% endblock%}  
+
+  {% include "shared/team.html" %}
+  {% include "shared/recognitions.html" %}
+</main><!-- main -->
+{% include "shared/footer.html" %}

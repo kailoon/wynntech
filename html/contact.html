@@ -1,0 +1,43 @@
+{% set page_title = "Contact Us" %}
+{% set page_head = "Feeling" %}
+{% set page_bold = "Good?" %}
+{% set page_desc = "Let's talk." %}
+{% set page_img = "https://source.unsplash.com/random/?food" %}
+{% include "shared/base.html" %}
+<main role="main">
+  {% include "shared/leading.html" %}
+  <section id="contact">
+
+		<div class="about">
+			<h3>Contact Us.</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cum ex ipsam facere velit nobis excepturi quisquam fugiat quod esse, laudantium, veritatis architecto iste. Commodi mollitia pariatur, maiores voluptatibus veritatis!</p>
+			<form action="https://formspree.io/chankailoon@gmail.com" method="POST" class="contact">
+				<input type="text" name="_gotcha" style="display:none" />
+				<label for="name">Name</label>
+			  <input type="text" name="name" placeholder="Please tell us your name" tabindex="1" autofocus required>
+
+			  <label for="email">Email</label>
+			  <input type="email" name="email" placeholder="Your email please" tabindex="2" required>
+			  <span>We'll never share your email with anyone else.</span>
+
+			  <label for="_subject">Subject</label>
+			  <input type="text" name="_subject" tabindex="3" placeholder="Subject">
+
+			  <label for="message">Message</label>
+			  <textarea name="message" tabindex="4" placeholder="Message" rows="8"></textarea>
+
+			  <input type="submit" value="Send" tabindex="5">
+			</form>
+		</div>
+		<div class="address">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.853798531254!2d101.41858165059335!3d3.133307397707276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc56b84401ae9f%3A0xd2b636d24a236a2c!2s30%2C+Jalan+Meru+Indah+20%2C+Taman+Perindustrian+Meru+Indah%2C+42200+Kapar%2C+Selangor!5e0!3m2!1sen!2smy!4v1537851336358" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<p>
+				No. 30, Jalan Meru Indah 20, Taman Perindustrian Meru Indah, 42200 Kapar, Selangor.
+			</p>
+			<p>
+				Tel/Fax: <a href="tel:+603-3392 1750">+603-3392 1750</a>
+			</p>
+		</div>  	  
+  </section>
+</main><!-- main -->
+{% include "shared/footer.html" %}
